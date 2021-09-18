@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    border: 4px solid black;
+    display: flex;
+    max-width: 1200px;
+}
+
+.box{
+    border: 2px solid red;
+    flex-basis: 300px;       /*(it acts like width or height) */
+}
+
+.box1{
+    background-color: lightblue;
+    /* order: 2;  this is highest so this will come first.  */
+    /* flex-grow: 2;   these are just the ratios of vacant space.  */
+    /* flex-shrink: 1;  (it will give up the least space while shrinking) */
+    /* flex: 1 2 400px;   (this is just a shortcut of writing flex-grow, flex-shrink and flex-basis respectively) */
+}
+
+.box2{
+    background-color: lightcoral;
+    /* align-self: flex-start;  (this will move this item to start)  */
+    /* order: 1; this will come in 2nd  */
+    /* flex-grow: 1;  these are just the ratios of vacant space. */
+    /* flex-shrink: 2;  (it will give up the 2nd most space while shrinking) */
+}
+
+.box3{
+    background-color: lightgoldenrodyellow;
+    /* order: 0;      (this is default order) and (this is lowest so it will come at first.)  */
+    /* flex-grow: 1;  these are just the ratios of vacant space. */
+    /* flex-shrink: 3;    (it will give up the most space while shrinking) */
+}
+
+/* In align-self we can use all properties which we used in align-items.  */
+
+/* Order is used to exchange places of items. The one with higher order will come in last  */
+
+/* Flex basis is the initial length in the direction of main axis. Flex basis is more preffered/dominated over width or height */
+
+/* We use flex-grow when we have leftover vacant space which we want to fill up  */
+/* Let's say 
+We have a flex container of width 1200px and we have 3 flex items of 300px each. It means we have left with another 300px space,
+which we want to fill up. 
+So we give flex-grow: 2; to .box1
+we give flex-grow: 1; to .box2
+we give flex-grow: 1; to .box3
+There 2:1:1 are the ratios of vacat space each box will acquire. So, box1 will gain 150px whereas box2 and box3 will gain 75px each. */
+
+/* Flex-shrink is used when we want to control the shrinknees of our flex-items.  */
+/* Let's say,
+We have flex container of width 1200px and we have 3 items of 600px each. So, they will be needing 1800px but they won't
+get that. So, they will shrink in conatiner at equal widths.
+But if we give, flex-shrink 1; to box1
+flex-shrink 2; to box2
+flex-shrink 3; to box3
+These 1:2:3 are the ratios of shrinkness to box3 will give up the most space.  */

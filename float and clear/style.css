@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;  /* We just write this. So, write this */
+}
+
+.favt-musicians {
+    border: 10px solid green;
+}
+
+.beethoven {
+    width: 25%;
+    background: lightgray;
+    float: left;
+    padding: 20px;
+}
+.benjamin {
+    width: 25%;
+    background: lightgreen;
+    float: left;
+    padding: 20px;
+}
+.walker {
+    width: 25%;
+    background: lightpink;
+    float: left;
+    padding: 20px;
+}
+.marie {
+    width: 25%;
+    background: lightskyblue;
+    float: left;
+    padding: 20px;
+}
+
+.favt-musicians::after {   /* This is necassry to get our content back in its document flow which is div here. */
+    content: "";
+    display: block;
+    clear: both;
+}

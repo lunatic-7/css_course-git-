@@ -1,0 +1,7 @@
+p:first-child {           /* Kya ye apne parent ka pehla child hai */
+    color: red;
+}
+
+p:first-of-type {       /* Kya ye kisi parent ka pehla p hai */
+    color: blue;
+}

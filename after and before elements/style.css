@@ -1,0 +1,13 @@
+.cool::before {
+    content: 'Hello '; /* by default this is inline */
+    color: green;
+    border: 2px solid red;
+}  /* this is to add something before class */
+
+.cool::after {
+    content: 'Hello '; /* by default this is inline */
+    color: green;     
+    border: 2px solid red;
+}  /* this is to add something after class */
+
+/* We can't use these with img, br, label etc... */

@@ -1,0 +1,11 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-green { /* These are utility classes we create them first in css and after that we add them to html. */
+    color: rgb(4, 250, 78);
+}
+
+.text-dark {
+    background-color: indianred;
+}

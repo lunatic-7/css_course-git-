@@ -1,0 +1,21 @@
+/* h2 {
+    border-width: 4px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 10px;
+} */
+ 
+/* This is the short form of upper case. */
+
+h2 {                                                        
+    border: 4px solid red;
+    border-radius: 10px; 
+}
+
+p {
+    border: 4px solid green;
+}
+
+span {
+    border: 2px dotted black;
+}

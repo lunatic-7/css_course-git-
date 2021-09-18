@@ -1,0 +1,11 @@
+a {
+    border: 2px solid black;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+}
+
+/* display: inline-block; by this our inline element will still look like inline but it will acquire all the properties of block 
+lvl elements. */

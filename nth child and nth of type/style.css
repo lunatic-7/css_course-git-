@@ -1,0 +1,15 @@
+/* p:nth-child(2) {
+    color: red;
+} */
+
+p:nth-child(2n) {
+    color: red;
+}
+
+p:nth-of-type(2n) {
+    color: seagreen;
+}
+
+p:nth-of-type(2n+1) {
+    background: seashell;
+}

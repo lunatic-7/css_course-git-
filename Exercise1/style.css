@@ -1,0 +1,16 @@
+body {
+    font-family: 'Montserrat', sans-serif;;
+}
+
+
+header, main {
+    background-color: lightgray;
+}
+
+.heading {
+    color: rgb(28, 105, 141);
+}
+
+.mrk1 {
+    background-color: rgb(170, 128, 209);
+}

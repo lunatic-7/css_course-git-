@@ -1,0 +1,18 @@
+.box {
+    border: 4px solid red;
+    width: 50%;
+    padding: 5px;
+}
+
+h1 {
+    border: 2px solid green;
+    width: 70vw;
+}
+
+/* vh = visible height at that moment if we write 100vh it will cover whole height visible at that instant. */
+/* vw = visible width at that moment if we write 100vw it will cover whole width visible at that instant. */
+
+/* % is wrt parent but vw and vh is wrt screen size at that instant. */
+
+/* height: 100vmin;   ---> Jo chhez vh ya vw mai se km hogi uska 100% */
+/* height: 100vmax;   ---> Jo cheez vh ya vw mai se jyda hogi uska 100% */

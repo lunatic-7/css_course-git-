@@ -1,0 +1,36 @@
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {            /* Dba kr rkhe wqt */
+    color: black;
+}
+
+p:hover {                     
+    color: blueviolet;
+}
+
+p:active {
+    background-color: burlywood;
+}
+
+/* link, visited, hover, active */
+/* We have to write in this order only left to right. */
+
+input:focus {     /* this means when we click on it these things will happen */
+    padding: 5px;
+    outline: none;
+    border: 2px solid red;
+}
+
+input:required {   /* this is just to select the required field. */
+    color: red;
+}

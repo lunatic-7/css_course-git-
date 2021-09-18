@@ -1,0 +1,25 @@
+hr {
+    width: 500px;
+    margin-left: 0;
+    border: 1px dashed black;
+}
+
+.cls1 {
+    width: 500px;
+    background-color: burlywood;
+    border: 10px solid red;
+    padding: 50px;
+    margin-bottom: 10px;
+    box-sizing: border-box;     /* --->   Through this we can get our width back to 500px */
+}
+
+.cls2 {
+    width: 500px;
+    background-color: burlywood;
+    border: 10px solid red;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+
+/* If we create a content of let's say a width of 500px. Now if we add padding and border to it, its width 
+will increase which we usually don't want to happen. So, we use box-sizing: border-box. */

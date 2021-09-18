@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 800px;
+    border: 8px solid green;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container2 {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border: 8px solid green;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container2 h1 {
+    border: 4px solid red;
+    background: lightgoldenrodyellow;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);  /* Trick to move it in centre. */
+
+
+}
+
+.container h1 {
+    border: 4px solid red;
+    background: lightgoldenrodyellow;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: -1;  /* negative to hide it or tranparent it over other */
+}
+
+.container h3 {
+    background: black;
+    color: blanchedalmond;
+    position: fixed;        /* Now it will be fixed always */  /*it will normal leave document flow. Now we can move it to anywhere. */
+    bottom: 0px;        /* In bottom */
+}
+
+h4 {
+    background: black;
+    color: blanchedalmond;
+    position: sticky; /* as we start scrolling and it reaches to 0px on top it will be fixed up there. */
+    top: 0px;
+}
+
+.container h5 {
+    background: black;
+    color: blanchedalmond;
+    position: absolute;       /* When we give position: absolute it will leave document flow. Now we can move it to anywhere. */
+    top: 0px;
+    right: 0px;
+}
+
+.container p {
+    border: 4px solid purple;
+    background: lightgray;
+}

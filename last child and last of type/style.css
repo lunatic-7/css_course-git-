@@ -1,0 +1,7 @@
+p:last-child {        /* kya ye apne parent ka last child hai */
+    color: red;
+}
+
+p:last-of-type {     /* kya ye kisi parent ka last p hai */
+    color: royalblue;
+}

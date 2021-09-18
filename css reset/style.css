@@ -1,0 +1,18 @@
+/* So, we can now see out browser has given some margin and padding to our content by default. But we usually don't 
+want them when we make our websites. So, we do a CSS reset through universal selector. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  Now we have reset it, now we can give margin and padding of our wish. */
+
+h1 {
+    margin: 10px;
+}
+
+p {
+    margin: 7px;
+    padding: 7px;
+}

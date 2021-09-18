@@ -1,0 +1,30 @@
+header {
+    background-color: rgb(219, 236, 236);
+}
+
+section.my-articles {
+    background-color: rgb(219, 236, 236);
+}
+
+/* Descendent selectors or combinators: */
+header p {                    /*It means all the P's in header will be red. */
+    color: red; 
+}
+
+li a {
+    color: red;
+}
+
+/* Selectors or Direct child combinators: */
+section.my-articles > h2 {         /* It means only those h2 which are directly in section.myarticles */
+    color: green;
+} 
+
+/* Adjacent selector: */
+h2+p {                        /* It means only those p which directly comes after h2. */
+    color: orangered;
+}
+
+ul+p {
+    color: green;
+}

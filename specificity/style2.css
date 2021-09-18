@@ -1,0 +1,19 @@
+/* We have to calculate sepecificity in this order. */
+
+/* Specificity (prefrence)
+inline style attributes > id selector > class selector > element selector */
+
+div#container ul.my-songs li {   /* Specificity score = 0,1,1,3 ---> 113 */
+    color: brown;
+    background-color: yellow;
+}
+
+.favourite {    /* Specificity score = 0,0,1,0 ---> 10 */
+    color: yellow;
+    background-color: brown;
+}
+
+div#container ul.my-songs li.favourite {   /* Specificity score = 0,1,2,3 ---> 123 */
+    color: yellow;
+    background-color: brown;
+}

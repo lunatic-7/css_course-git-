@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+}
+
+h1, h2 {
+    border: 2px solid #222;
+    margin: 10px;
+    padding: 20px;
+    width: 500px;
+}
+a {
+    border: 2px solid red;
+    margin: 10px;
+    padding: 20px;
+    width: 500px;
+}
+
+/* Block lvl elements always starts from a new line wheras not such case in inline elements. */
+/* Block lvl elements take complete width whereas inline elements take only required width. */
+
+/* margin: 100px; This will give margin to block lvl elements in all directions.
+                Whereas this will give margin to inline elements in left and right only. */
+
+/* padding: 100px; This will give padding to block lvl elements in all directions.
+                and this will give padding to inline elements as well, but we don;t usually use up and below 
+                padding for inline elements, bc they mess up the things. */
+
+/* There is no effect of width on inline elements. */
+
+/* display: inline; By this we can change block lvl elements to inline
+display: block; By this we can change inline elements to block lvl */

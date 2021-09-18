@@ -1,0 +1,18 @@
+/* So, we know by default our font-size is 16px. so, here 16px = 100% */
+/* Remember % percentage is calculated wrt its parent. */
+/* % is mostly used with widths */
+div {
+    font-size: 20px;
+    border: 2px solid red;
+    width: 50%;
+}
+
+p {
+    font-size: 200%;     /* here 200% means 40px */
+    border: 1px solid green;
+    width: 50%;
+    background: lightsteelblue;
+    margin: 10px auto;
+    text-align: center;
+    padding: 5px;
+}

@@ -1,0 +1,28 @@
+body :not(p) {
+    color: blue;
+}   /* It means all the elements which are not in p will be blue, Here it is imp. to mention body first,
+otherwise our p will inherit blue color from the body. */
+/* In parenthesis we can write any element, class or id. */
+
+div:empty {
+    background: grey;
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+} /* It means select those div which are empty. */
+
+:root {
+    background: honeydew;
+}  /* Writing root or HTML is the same thing, It just selects everything. */
+
+p::first-letter {
+    font-size: 32px;
+}  /* It is to select first letter of a para. */
+
+p::selection {
+    background: black;
+    color: blanchedalmond;
+} /* It is to select what we select in para */
+
+
+

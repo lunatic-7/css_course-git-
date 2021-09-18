@@ -1,0 +1,14 @@
+/* Specificity (prefrence)
+inline style attributes > id selector > class selector > element selector */
+
+h1 {
+    color: tan;
+}
+
+.h1class {
+    color: slategrey;
+}
+
+#h1id {
+    color: springgreen;
+}

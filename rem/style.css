@@ -1,0 +1,22 @@
+/* REM take its size from root element which is html, and by default text-size of HTML is 16px.
+So, 1rem = 16px HERE */
+
+html {
+    /* font-size: 10px; */
+    font-size: 62.5%;
+}
+
+/*  These both mean 10px only. But most of the developers use percentage form beacause it is easy to customize.
+After that we can do our clculation in rem which is easier to use. */
+
+.cls1 {
+    font-size: 2rem;
+}
+
+.para {
+    font-size: 3rem;
+    border: 1rem solid red;
+    margin: 0.5rem;
+    padding: 4.5rem;
+}
+

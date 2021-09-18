@@ -1,0 +1,18 @@
+h1 {
+    border: 4px solid red;
+    /* padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px; */
+    /* padding: 50px;        /* shortcut for upper codes, 50px in all sides. */
+    /* padding: 40px 20px;   it means 40px in up and botton and 20px in left and right. */
+    padding: 20px 30px 40px 40px;  /* It goes in clockwise direction up, right, bottom, and left. */
+    margin-top: 100px;
+    width: 500px;            /* this is border's width. */
+    margin: 20px auto;       /*trick to allign it in center. */
+    background-color: aliceblue;
+}
+
+/* Padding is the space b/w border and our content.
+Margin is space outside border.
+Margin has same short cuts as padding. */

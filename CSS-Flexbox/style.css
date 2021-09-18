@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    border: 4px solid black;
+    display: flex;
+    /* flex-direction: row;   This is default direction (Main axis left to right) */
+    /* flex-direction: row-reverse;   Main axis right to left */
+    /* flex-direction: column;   This is original position without flex (Main axis up to down) */
+    /* flex-direction: column-reverse;   Main axis down to up */
+
+    /* flex-wrap: nowrap;  (This is default) */
+    /* flex-wrap: wrap;  Flex items flows in direction of cross axis, after attaining their complete width. */
+    /* flex-wrap: wrap-reverse;    cross axis direction opposes  */
+    
+    /* justify-content: flex-start;  (this is default) (all items will incline towards start of main axis) */
+    /* justify-content: flex-end;   (all items will incline towards end of main axis) */
+    /* justify-content: center;  (all items will incline in the center of main axis) */
+    /* justify-content: space-evenly;   (give equal spaces to all) */
+    /* justify-content: space-between;   (give equal spaces in between all items) */
+    /* justify-content: space-around;  (give equal spaces around every item) */
+
+    /* align-items: stretch;  (this is default) if we increase height all items will be stretched  */
+    /* align-items: flex-start;  All items will incline towards start of cross axis  */
+    /* align-items: flex-end;   All items will incline towrds end of cross axis  */
+    /* align-items: center;  All items will shift in center of cross axis */
+
+    /* align-items: flex-start;
+    flex-wrap: wrap; */
+    /* align-content: center; (all the content will come in center)  */
+    /* align-content: flex-start; (all content will shift in starting) */
+    /* align-content: flex-end;  (all content will shift in end) */
+    /* align-content: space-between;  (to give space b/w contents)  */
+    /* align-content: space-around;  (to give space around contents)  */
+
+    /* flex-flow: row wrap;   (this is just a shortcut for writing flex-direction and flex-wrap together.) */
+}
+
+.box{
+    border: 2px solid red;
+    width: 500px;  /* This will work only after applying flex wrap property */
+}
+
+.box1{
+    background-color: lightblue;
+}
+
+.box2{
+    background-color: lightcoral;
+}
+
+.box3{
+    background-color: lightgoldenrodyellow;
+}
+
+.box4{
+    background-color: lightgreen;
+}
+
+.box5{
+    background-color: lightslategray;
+}
+
+/* Earlier we used tables for styling our website.
+Then we used floats (Which I have learned.)
+Now we use flexbox which is much more powerful and simpler than floats */
+
+/* Flex container = Parent
+   Flex item = All his childrens */
+
+/* To align childrens from left to right just give parent a property display: flex; and BOOM! Your job is done */
+
+/* It is necessary to apply flex-wrap property to alter the width and height of flex items. Otherwise that won't work. */
+
+/* Justify-content works on main axis and align-items works on cross axis.  */
+
+/* Align container works in cross axis direction and we use it only when we have flex items in multiple lines. */

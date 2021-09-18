@@ -1,0 +1,9 @@
+h1 {
+    /* color: rgb(101, 101, 187); rgb means red blue green */
+    color: #578530; /* This is hex code we can copy it from color picker from google.*/
+    background-color: burlywood; /* background-color is used to change backgroung color. */
+    /* Hex code can be in from of 0 1 2 3 4 5 6 7 8 9 a b c d e f.
+    first two digit is RED
+    Second two digit is BLUE
+    last two digit is GREEN */
+}

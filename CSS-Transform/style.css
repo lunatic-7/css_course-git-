@@ -1,0 +1,67 @@
+/* We can do 4 things with transform property, (rotate, skew, scale and translate */
+
+.box1{
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+    background-color: rgb(104, 184, 211);
+    margin-bottom: 150px;
+    margin: 100px auto;
+    transition: transform 1s ease-in-out;
+}
+
+.box1:hover{
+    transform: rotate(30deg); /*it will rotate to 30 degree from the centre. */
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+    background-color: rgb(104, 211, 140);
+    margin-bottom: 150px;
+    margin: 100px auto;
+    transform-origin: top left;   /* Here, we change the origin of rotation. */
+    transition: transform 1s ease-in-out;
+}
+
+.box2:hover{
+    transform: rotate(70deg);
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+    background-color: rgb(104, 129, 211);
+    margin: 100px auto;
+    margin-bottom: 150px;
+    transition: transform 1s ease-in-out;
+}
+
+.box3:hover{
+    transform: scale(1.5, 2); /* this will increse size 1.5 in x and 2 in y */
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+    background-color: rgb(211, 104, 157);
+    margin: 100px auto;
+    margin-bottom: 150px;
+    transition: transform 1s ease-in-out;
+}
+
+.box4:hover{
+    transform: translate(100px, 50px);  /* To change position of an item */
+}
+.box5{
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+    background-color: rgb(211, 120, 104);
+    margin: 100px auto;
+    transition: transform 1s ease-in-out;
+}
+
+.box5:hover{
+    transform: skew(10deg, 20deg);   /*tedha*/
+}

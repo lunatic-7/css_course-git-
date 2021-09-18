@@ -1,0 +1,84 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation-name: change-bg-color; /* we can give it any name which we will use on keyframes */
+    animation-duration: 5s;  /* this is the duration of animation */
+    animation-delay: 3s;  /* This is after how much time animation will start */
+    /* animation-fill-mode: forwards;  This means animation won't come back after changing */
+    animation-iteration-count: 3;  /* This means animation will repeat 3 times */
+}
+
+@keyframes change-bg-color{
+    from{
+        background: red;
+    }
+    to{
+        background: orange;
+    }
+}
+
+.box2{
+    width: 15px;
+    height: 10px;
+    background: blue;
+    margin: 10px 0;
+    animation-name: grow-line;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-direction: reverse; /* By this we can change direction of anmation. */
+}
+
+@keyframes grow-line{
+    from{
+        width: 0;
+    }
+    to{
+        width: 300px;
+    }
+}
+
+.box3{
+    width: 50px;
+    height: 50px;
+    background: lightcoral;
+    border-radius: 50%;
+    position: relative;
+    /* animation-name: move-around;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s; */
+    animation-iteration-count: infinite; /* it means animation will repeat infinite times. */ 
+
+    /* animation-timing-function: ease-in;  it means slow start (ease-out = slow end) (ease-in-out = slow start and end) */
+    animation: move-around 5s forwards 2s infinite ease-in;  /* Shortcut of writing top 4 respectively. */
+}
+
+@keyframes move-around{
+    0%{
+        top: 0;
+        left: 0;
+        background: lightcyan;
+    }
+    25%{
+        top: 0;
+        left: 300px;
+        background: lightgoldenrodyellow;
+    }
+    50%{
+        top: 300px;
+        left: 300px;
+        background: lightpink;
+    }
+    75%{
+        top: 300px;
+        left: 0;
+        background: lightsteelblue;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        background: limegreen;
+    }
+}
+

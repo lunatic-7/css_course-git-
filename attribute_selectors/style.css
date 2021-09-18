@@ -1,0 +1,23 @@
+input[type = "text"] {
+    color: orangered;
+}
+
+input[type = "password"] {
+    background-color: pink;
+}
+
+/* a[href = "http://google.co.in"] { it will select http://google.co.in
+    color: royalblue;
+} */
+
+/* a[href *= "google"] {  it means all the words which has google in it.
+    color: saddlebrown;
+} */
+
+/* a[href ^= "http"] {  it means all href which starts with http
+    color: salmon;
+} */
+
+a[href $= ".com"] {  /* it means all href which ends with .com */
+    color: slategrey;
+}
